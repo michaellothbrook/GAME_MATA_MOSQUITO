@@ -1,7 +1,7 @@
-	
+
 	var altura = 0
 	var largura = 0
-	var tempo = 50
+	var tempo = 10
 
 	var criaMosquitoTempo = 1500
 
@@ -61,7 +61,7 @@
 				window.location.href = 'fim_jogo.html'
 
 			} else {
-				document.getElementById('v' + vidas).src = 'imagens/coracao_vazio.png'
+				document.getElementById('v' + vidas).src = 'imagens/coracao_vazio.jpg'
 
 				vidas++
 			}
@@ -80,7 +80,7 @@
 
 		//criando o elemento html
 		var mosquito = document.createElement('img')
-		mosquito.src = 'imagens/mosca.png'
+		mosquito.src = 'imagens/mosquito.jpg'
 		mosquito.className = tamanhoAleatorio() + ' ' + ladoAleatorio()
 		mosquito.style.left = posicaoX + 'px'
 		mosquito.style.top = posicaoY + 'px'
